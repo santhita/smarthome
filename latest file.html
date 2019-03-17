@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMART HOME, SMART CAMP</title>
+    <link rel="icon" href="https://img.live/images/2019/03/17/Untitled-1ba8a6.png" type="image/gif" sizes="16x16">
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+     <style>
+         body {
+            background-image: url("https://images.wallpaperscraft.com/image/fox_stone_fire_paper_figures_93387_2560x1440.jpg");
+            background-position: center;
+            /* background-size: 100%;  */
+         }
+     </style>
+    
+     <style>
+         .card-panel {
+            background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/55f44843377507.57ecc15d2bac3.gif");
+            background-position: center;
+            opacity: 0.8;
+            /* filter: alpha(opacity=50); For IE8 and earlier */
+}
+        .my-text{
+            opacity: 1;
+        }
+     </style>
+             
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+        <!-- <h1 align= 'middle' style="font-size: 50px;color:lightsalmon" >SMART HOME, SMART CAMP</h1> -->
+
+    <div class="container center">
+    <div class="row" style="margin-top:2%">
+        <div class="col s2"></div>
+        <div class="col s8">
+            <div class="row">
+                <div class="" style="border-radius: 40px;">
+                        <a href="#"><img src="https://img.live/images/2019/03/17/Untitled-1ba8a6.png" height="350 px" width="350 px"></a>
+                    </div><!-- <a href="#"> <img src="https://www.img.in.th/images/24e6b26338c56139cae8852f27a24470.png"  height="350 px" width="350 px"></a> -->
+            </div>            
+            <div class="row card-panel " style="border-radius: 40px;" >
+                <div class="col s6">
+                        <br>
+                        <p><span style="color:rgb(255,255,255, 1.0); ">FRONT YARD</span></p>
+                            <button id="on1" class="waves-effect waves-teal btn-flat" onclick="myFunction1_1()"><span style="color: #ffffff"> ON </span></button>
+                            <button id="off1" class="waves-effect waves-red btn-flat" onclick="myFunction1_2()"><span style="color: #ffffff"> OFF </span></button>
+                        <br>
+                        <br>
+                        <p><span style="color:#ffffff ">KITCHEN</span></p>
+                            <button id="on2" class="waves-effect waves-teal btn-flat" onclick="myFunction2_1()"><span style="color: #ffffff"> ON </span></button>
+                            <button id="off2" class="waves-effect waves-red btn-flat"  onclick="myFunction2_2()"><span style="color: #ffffff"> OFF </span></button>
+                        <br>
+                        <br>
+                        <p><span style="color:#ffffff ">LIVING ROOM</span></p>
+                            <button id="on3" class="waves-effect waves-teal btn-flat" onclick="myFunction3_1()"><span style="color: #ffffff"> ON </span></button>
+                            <button id="off3" class="waves-effect waves-red btn-flat" onclick="myFunction3_2()"><span style="color: #ffffff"> OFF </span></button>
+                </div>
+                <div class="col s6">
+                         <br>
+                         <p><span style="color:#ffffff ">STAIR</span></p>
+                             <button id="on4" class="waves-effect waves-teal btn-flat" onclick="myFunction4_1()"><span style="color: #ffffff"> ON </span></button>
+                             <button id="off4" class="waves-effect waves-red btn-flat" onclick="myFunction4_2()"><span style="color: #ffffff"> OFF </span></button>
+                         <br>    
+                         <br> 
+                         <p><span style="color:#ffffff ">TOP ROOM</span></p>
+                             <button id="on5" class="waves-effect waves-teal btn-flat" onclick="myFunction5_1()"><span style="color: #ffffff"> ON </span></button>
+                             <button id="off5"class="waves-effect waves-red btn-flat" onclick="myFunction5_2()"><span style="color: #ffffff"> OFF </span></button>
+                         <br>
+                         <br>
+                         <p><span style="color:#ffffff ">BEDROOM</span></p>
+                             <button id="on6"class="waves-effect waves-teal btn-flat" onclick="myFunction6_1()"><span style="color: #ffffff"> ON </span></button>
+                             <button id="off6"class="waves-effect waves-red btn-flat" onclick="myFunction6_2()"><span style="color: #ffffff"> OFF </span></button>
+ 
+                </div>
+            </div>
+
+                
+        </div>
+                
+        <div class="col s2"></div>
+    </div>
+    </div>
+    <script>
+            function myFunction1_1(){
+                var MyWindow;
+                MyWindow = window.open('led1On1',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on1").hide();
+                $("#off1").show();
+                $("#01").hide();
+                $("#02").show();
+            }
+            
+            function myFunction1_2(){
+                var MyWindow;
+                MyWindow = window.open('led1Off1',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on1").show();
+                $("#off1").hide();
+                $("#02").hide();
+                $("#01").show();
+            }
+            function myFunction2_1(){
+                var MyWindow;
+                MyWindow = window.open('led1On2',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on2").hide();
+                $("#off2").show();
+                $("#03").hide();
+                $("#04").show();
+            }
+            
+            function myFunction2_2(){
+                var MyWindow;
+                MyWindow = window.open('led1Off2',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on2").show();
+                $("#off2").hide();
+                $("#04").hide();
+                $("#03").show();
+            }
+            function myFunction3_1(){
+                var MyWindow;
+                MyWindow = window.open('led1On3',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on3").hide();
+                $("#off3").show();
+                $("#05").hide();
+                $("#06").show();
+            }
+            
+            function myFunction3_2(){
+                var MyWindow;
+                MyWindow = window.open('led1Off3',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on3").show();
+                $("#off3").hide();
+                $("#06").hide();
+                $("#05").show();
+            }
+            function myFunction4_1(){
+                var MyWindow;
+                MyWindow = window.open('led1On4',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on4").hide();
+                $("#off4").show();
+                $("#07").hide();
+                $("#08").show();
+            }
+            
+            function myFunction4_2(){
+                var MyWindow;
+                MyWindow = window.open('led1Off4',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on4").show();
+                $("#off4").hide();
+                $("#08").hide();
+                $("#07").show();
+            }
+            function myFunction5_1(){
+                var MyWindow;
+                MyWindow = window.open('led1On5',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on5").hide();
+                $("#off5").show();
+                $("#09").hide();
+                $("#10").show();
+            }
+            
+            function myFunction5_2(){
+                var MyWindow;
+                MyWindow = window.open('led1Off5',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on5").show();
+                $("#off5").hide();
+                $("#10").hide();
+                $("#09").show();
+            }
+            function myFunction6_1(){
+                var MyWindow;
+                MyWindow = window.open('led1On6',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on6").hide();
+                $("#off6").show();
+                $("#11").hide();
+                $("#12").show();
+            }
+            
+            function myFunction6_2(){
+                var MyWindow;
+                MyWindow = window.open('led1Off6',"MyWindow","width=1,height=1")
+                setInterval(function(){MyWindow.close()},150);
+                $("#on6").show();
+                $("#off6").hide();
+                $("#12").hide();
+                $("#11").show();
+            }
+            </script>
+        <style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/games/gam-11/gam1088.cur), progress !important;}
+        </style><a href="http://www.cursors-4u.com/cursor/2010/02/24/flyff-chinese-index-finger-point.html" target="_blank" title="Flyff Chinese Index Finger Point">
+        <img src="http://cursors-4u.com/cursor.png" border="0" alt="Flyff Chinese Index Finger Point" style="position:absolute; top: 0px; right: 0px;" /></a> 
+</body>
+</html>>
